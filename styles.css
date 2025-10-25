@@ -1,0 +1,221 @@
+body {
+  font-family: "Inter", "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.45;
+}
+
+.navbar {
+  background: #2B2B2B;
+}
+.navbar .navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+.navbar .nav-link {
+  color: #ffffff;
+}
+.navbar .btn-primary {
+  background-color: #d4b07a;
+  color: #333;
+  border: none;
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+}
+.navbar .btn-primary:hover {
+  background-color: rgb(199.5397727273, 153.1079545455, 83.4602272727);
+  color: #333;
+}
+
+.btn-rounded {
+  border-radius: 999px !important;
+}
+
+.hero {
+  padding: clamp(2rem, 6vw, 6rem) 0;
+  background: #202020;
+}
+.hero h1 {
+  font-size: clamp(1.8rem, 4.5vw, 3rem);
+  margin-bottom: 0.4rem;
+}
+.hero .lead {
+  color: rgba(163, 163, 163, 0.4235294118);
+  margin-bottom: 1rem;
+}
+.hero .hero-img {
+  max-width: 720px;
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+.hero .btn-light {
+  background-color: #d4b07a;
+  color: #333;
+  border: none;
+}
+.hero .btn-light:hover {
+  background-color: rgb(199.5397727273, 153.1079545455, 83.4602272727);
+  color: #333;
+}
+
+.about {
+  padding: clamp(2rem, 4vw, 4rem) 0;
+  background: #2B2B2B;
+}
+.about .card-placeholder {
+  border-radius: 12px;
+  background: #202020;
+  border: 1px solid #333;
+  padding: 1.25rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  min-height: 160px;
+}
+.about .card-icon {
+  width: 64px;
+  height: auto;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.about .card-desc {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.95rem;
+  line-height: 1.2;
+}
+.about .nav-tabs .nav-item .nav-link {
+  background-color: #D4A373;
+  color: #333;
+  border: none;
+  border-radius: 20px;
+  margin: 0 5px;
+  padding: 8px 16px;
+}
+.about .nav-tabs .nav-item .nav-link:hover {
+  background-color: rgb(200.0163934426, 137.3606557377, 75.9836065574);
+  color: #333;
+}
+.about .nav-tabs .nav-item .nav-link.active {
+  background-color: rgb(200.0163934426, 137.3606557377, 75.9836065574);
+  color: #333;
+  font-weight: bold;
+}
+.about .tab-content .tab-pane .card-placeholder {
+  margin-top: 1rem;
+}
+
+footer {
+  background: #202020;
+  color: #ffffff;
+  padding: 1rem 0;
+}
+footer .footer-logo {
+  max-width: 100px;
+  height: auto;
+}
+footer .btn-purple {
+  background-color: #cbb2fe;
+  border-color: #cbb2fe;
+  color: #141414;
+  border-radius: 999px;
+}
+footer .btn-purple:hover {
+  background-color: rgb(169, 127.6538461538, 253.3461538462);
+  border-color: rgb(169, 127.6538461538, 253.3461538462);
+}
+footer .input-group {
+  max-width: 250px;
+}
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+.comment-section {
+  background: #202020;
+  padding: 2rem 0;
+}
+.comment-section .carousel {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.comment-section .carousel .comment-box {
+  background: #cbb2fe;
+  border-radius: 16px;
+  width: 100%;
+  color: #141414;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+.comment-section .carousel .comment-box .comment-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #141414;
+}
+.comment-section .carousel .comment-box .avatar-placeholder {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #999;
+  flex-shrink: 0;
+}
+.comment-section .carousel .comment-box .comment-author {
+  font-size: 0.95rem;
+  color: #141414;
+}
+.comment-section .carousel .comment-box .stars-placeholder {
+  width: 80px;
+  height: auto;
+}
+.comment-section .carousel .carousel-control-prev,
+.comment-section .carousel .carousel-control-next {
+  filter: invert(1);
+  opacity: 0.5;
+}
+.comment-section .carousel .carousel-control-prev:hover,
+.comment-section .carousel .carousel-control-next:hover {
+  opacity: 1;
+}
+.comment-section .carousel .carousel-indicators {
+  bottom: -30px;
+}
+.comment-section .carousel .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  background-color: #999;
+  border: none;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+.comment-section .carousel .carousel-indicators button.active {
+  background-color: #cbb2fe;
+  width: 12px;
+  height: 12px;
+}
+.comment-section .carousel .carousel-inner {
+  transition: transform 0.6s ease-in-out;
+}
+
+.questions-section {
+  background: #2B2B2B;
+}
+.questions-section .display-5 {
+  color: #ffffff;
+}
+.questions-section .lead {
+  color: rgba(163, 163, 163, 0.4235294118);
+}
+.questions-section .btn {
+  font-weight: 600;
+}/*# sourceMappingURL=styles.css.map */
